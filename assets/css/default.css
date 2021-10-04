@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    /*Colors*/
+    --red1: #971F3A;
+    --red2: #BF0224;
+    --pink: #F5B9B9;
+    --grey1: #333333;
+    --grey2: #D6D6D6;
+    --white: #FFF;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif, arial;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Default Classes */
+.container {
+    width: 100%;
+    max-width: 1300px;
+}
+
+/* Fonts */
+.r-regular {
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.r-medium {
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.r-bold {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.r-black {
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+
+/* Font sizes */
+.f-11 {
+    font-size: 11px;
+}
+
+.f-13 {
+    font-size: 13px;
+}
+
+.f-15 {
+    font-size: 15px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+.f-24 {
+    font-size: 24px;
+}
+
+.f-28 {
+    font-size: 28px;
+}
+
+.f-36 {
+    font-size: 36px;
+}
+
+.f-40 {
+    font-size: 40px;
+}
+
+.f-48 {
+    font-size: 48px;
+}
+
+.f-64 {
+    font-size: 64px;
+}
+
+.f-72 {
+    font-size: 72px;
+}
+
+/* colors */
+.white {
+    color: var(--white);
+}
+
+.grey1 {
+    color: var(--grey1);
+}
+
+.grey2 {
+    color: var(--grey2);
+}
+
+.pink {
+    color: var(--pink);
+}
+
+.red1 {
+    color: var(--red1);
+}
+
+.red2 {
+    color: var(--red2);
+}
+
+/* margins */
+.mt-1 {
+    margin-top: 8px;
+}
+
+.mt-2 {
+    margin-top: 16px;
+}
+
+.mt-3 {
+    margin-top: 32px;
+}
+
+.mt-4 {
+    margin-top: 64px;
+}
+
+.mt-5 {
+    margin-top: 128px;
+}
