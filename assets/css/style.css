@@ -129,6 +129,7 @@ header .stopwatch span {
     padding: 5px 32px;
     background-color: var(--pink);
     margin-top: 16px;
+    cursor: pointer;
 }
 
 .prices p {
@@ -208,4 +209,198 @@ header .stopwatch span {
 
 .what-learn--items .item a {
     text-decoration: underline;
+}
+
+/* For who */
+.section-forwho .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 16px;
+}
+
+.title-star h1:after {
+    content: '';
+    width: 157px;
+    height: 157px;
+    background-image: url(../images/star.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -157px;
+    display: inline-block;
+}
+
+.forwho--items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    max-width: 1000px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin: auto;
+    margin-top: 128px;
+}
+
+.forwho--items .item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+}
+
+.forwho--items .item p {
+    margin-top: 8px;
+}
+
+.forwho--items .item-image img {
+    width: 60px;
+    height: 60px;
+    max-width: 60px;
+}
+
+.forwho--content {
+    text-align: center;
+    margin-top: 128px;
+}
+
+.forwho--content p {
+    margin: 16px 0;
+}
+
+.section-forwho .prices .btn-pink {
+    color: var(--white);
+    background-color: var(--red2);
+}
+
+/* Just twenty */
+.section-justtwenty .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.section-justtwenty .justtwenty-vacancies {
+    border: solid 2px var(--red1);
+    border-radius: 10px;
+    padding: 16px 32px;
+    box-shadow: 4px 4px 8px var(--red1);
+    margin-top: 32px;
+}
+
+/* Not Alone */
+.section-notalone .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.section-notalone p {
+    margin: 16px 0;
+}
+
+/* section details */
+.section-details {
+    background-image: url('../../media/banner2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.details-background {
+    background-color: var(--pink);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.section-details .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 16px;
+    text-align: center;
+    opacity: 0.99;
+}
+
+.details--items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 16px;
+    max-width: 1000px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin: auto;
+    margin-top: 128px;
+}
+
+.details--items .item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+}
+
+.details--items .item p {
+    margin-top: 8px;
+}
+
+.details--items .item-image img {
+    width: 60px;
+    height: 60px;
+    max-width: 60px;
+}
+
+/* Schedule */
+.section-schedule .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 128px 16px;
+    text-align: center;
+}
+
+.schedule--items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 64px;
+}
+
+.schedule--items .item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    width: 300px;
+}
+
+.schedule--items .item p {
+    margin-top: 8px;
+}
+
+.schedule--items .item-header {
+    width: auto;
+    padding: 2px 24px;
+    background-color: var(--red1);
 }
