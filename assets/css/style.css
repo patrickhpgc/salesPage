@@ -286,12 +286,16 @@ header .stopwatch span {
 }
 
 /* Just twenty */
+.section-justtwenty {
+    background-color: var(--pink);
+}
+
 .section-justtwenty .container {
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 64px 16px;
+    padding: 128px 16px;
     text-align: center;
 }
 
