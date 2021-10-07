@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página de apresentação da mentoria finanças das estrelas da estética.">
+    <meta name="description" content="Mentoria finanças das estrelas da estética.">
 
     <meta property="og:title" content="Analice Ramlow" />
     <meta property="og:type" content="website" />
@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="assets/images/icone.png" />
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsivenes.css">
+    <link rel="stylesheet" href="assets/css/responsiveness.css">
 
     <title>Mentoria | Finanças das estrelas da estética</title>
 </head>
@@ -25,14 +25,14 @@
         <section class="section--stopwatch">
             <div class="container">
                 <div class="stopwatch--content">
-                    <div class="stopwatch f-36 r-bold grey1">
-                        <span>01</span>
+                    <div class="stopwatch f-36 r-bold grey1" id="countdown">
+                        <span id="days"></span>
                         <span>:</span>
-                        <span>24</span>
+                        <span id="hours"></span>
                         <span>:</span>
-                        <span>12</span>
+                        <span id="minutes"></span>
                         <span>:</span>
-                        <span>24</span>
+                        <span id="seconds"></span>
                     </div>
                     <div>
                         <h3 class="f-24 grey1 r-regular">AS INSCRIÇÕES SE ENCERRAM EM</h3>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="header--video">
                     <div class="header--video-desc">
-                        <p class="r-regular f-16 white">Assista ao vídeo para entender com funciona a mentoria</p>
+                        <p class="r-regular f-16 white">Assista ao vídeo para entender como funciona a mentoria</p>
                     </div>
                     <div class="header--video-video">
                         <div class="header--video-videoarea">
@@ -67,7 +67,7 @@
                     <h3 class="r-bold f-24 grey2">De <strike>R$ 1.097,00</strike> por</h3>
                     <h1 class="r-black f-40 pink">R$ 597,00 à vista</h1>
                     <h3 class="r-medium f-24 grey2">ou 12x de R$ 58,16</h3>
-                    <button type="button" name="button" class="btn-pink r-bold f-28 grey1">APERTE AQUI PARA SE INSCREVER</button>
+                    <button type="button" name="button" class="btn-pink r-bold f-28 grey1" onclick="window.location.href='https://payment.hotmart.com/C59454760K?checkoutMode=10'">APERTE AQUI PARA SE INSCREVER</button>
                     <p class="r-regular f-16 grey2">Pagamento 100% seguro.</p>
                     <img src="assets/images/card-flags.svg" alt="Bandeira de cartões">
                 </div>
@@ -236,7 +236,7 @@
                     <h3 class="r-bold f-24 grey1">De <strike>R$ 1.097,00</strike> por</h3>
                     <h1 class="r-black f-40 red1">R$ 597,00 à vista</h1>
                     <h3 class="r-medium f-24 grey1">ou 12x de R$ 58,16</h3>
-                    <button type="button" name="button" class="btn-pink r-bold f-28 grey1">INSCREVA-SE AGORA</button>
+                    <button type="button" name="button" class="btn-pink r-bold f-28 grey1" onclick="window.location.href='https://payment.hotmart.com/C59454760K?checkoutMode=10'">INSCREVA-SE AGORA</button>
                     <p class="r-regular f-16 grey1">Pagamento 100% seguro.</p>
                     <img src="assets/images/card-flags.svg" alt="Bandeira de cartões">
                 </div>
@@ -420,9 +420,6 @@
                         <div class="item-title">
                             <p class="r-bold f-64 grey1">01</p>
                         </div>
-                        <div class="item-desc">
-                            <p class="r-regular f-20 grey1">Inteligência Financeira + Criação de Hábitos para Organizar</p>
-                        </div>
                     </div>
                     <div class="item">
                         <div class="item-header grey2 r-bold f-24">
@@ -430,9 +427,6 @@
                         </div>
                         <div class="item-title">
                             <p class="r-bold f-64 grey1">02</p>
-                        </div>
-                        <div class="item-desc">
-                            <p class="r-regular f-20 grey1">Separar Contas >PF X PJ< + Benefícios do CNPJ e dos Impostos</p>
                         </div>
                     </div>
                     <div class="item">
@@ -442,9 +436,6 @@
                         <div class="item-title">
                             <p class="r-bold f-64 grey1">03</p>
                         </div>
-                        <div class="item-desc">
-                            <p class="r-regular f-20 grey1">Organizar por Categorias + Analisar os Gastos e Custos</p>
-                        </div>
                     </div>
                     <div class="item">
                         <div class="item-header grey2 r-bold f-24">
@@ -453,9 +444,6 @@
                         <div class="item-title">
                             <p class="r-bold f-64 grey1">04</p>
                         </div>
-                        <div class="item-desc">
-                            <p class="r-regular f-20 grey1">Ferramentas para Organização + Planejar o Futuro e Cuidar do Dinheiro</p>
-                        </div>
                     </div>
                     <div class="item">
                         <div class="item-header grey2 r-bold f-24">
@@ -463,9 +451,6 @@
                         </div>
                         <div class="item-title">
                             <p class="r-bold f-64 grey1">05</p>
-                        </div>
-                        <div class="item-desc">
-                            <p class="r-regular f-20 grey1">Analisar as Finanças e Médias de Custos + Custo de Sobrevivência e Pró-Labore.</p>
                         </div>
                     </div>
                 </div>
@@ -491,7 +476,7 @@
                             <img src="assets/images/google-sheets.svg" alt="">
                         </div>
                         <div class="item-name">
-                            Apostilas
+                            Planilhas
                         </div>
                     </div>
                     <div class="item">
@@ -499,7 +484,7 @@
                             <img src="assets/images/google-docs.svg" alt="">
                         </div>
                         <div class="item-name">
-                            Apostilas
+                            Resumos
                         </div>
                     </div>
                     <div class="item">
@@ -507,7 +492,7 @@
                             <img src="assets/images/google-docs-black.svg" alt="">
                         </div>
                         <div class="item-name">
-                            Apostilas
+                            Exercícios
                         </div>
                     </div>
                 </div>
@@ -519,7 +504,7 @@
                     <h3 class="r-bold f-24 grey1">De <strike>R$ 1.097,00</strike> por</h3>
                     <h1 class="r-black f-40 red1">R$ 597,00 à vista</h1>
                     <h3 class="r-medium f-24 grey1">ou 12x de R$ 58,16</h3>
-                    <button type="button" name="button" class="btn-red r-bold f-28 white">FAZER MINHA INSCRIÇÃO</button>
+                    <button type="button" name="button" class="btn-red r-bold f-28 white" onclick="window.location.href='https://payment.hotmart.com/C59454760K?checkoutMode=10'">FAZER MINHA INSCRIÇÃO</button>
                     <p class="r-regular f-16 grey1">Pagamento 100% seguro.</p>
                     <img src="assets/images/card-flags.svg" alt="Bandeira de cartões">
                 </div>
@@ -565,15 +550,126 @@
                         <p class="r-bold f-24 grey1">Vai <span class="red1">realizar</span> mais <span class="red1">sonhos</span></p>
                     </div>
                 </div>
-                <p class="r-regular f-24 red1">Quer ter acesso a todos esses benefícios?</p>
-                <button type="button" name="button" class="btn-red r-bold f-28 white">PARTICIPAR</button>
+                <p class="r-regular f-24 red1 mt-5">Quer ter acesso a todos esses benefícios?</p>
+                <button type="button" name="button" class="btn-red r-bold f-28 white" onclick="window.location.href='https://payment.hotmart.com/C59454760K?checkoutMode=10'">PARTICIPAR</button>
             </div>
         </section>
         <section class="section-comments">
             <div class="container">
-
+                <h1 class="r-bold f-48 red1">CONFIRA OS DEPOIMENTOS SOBRE A MENTORIA</h1>
+                <div class="comments-videos">
+                    <div class="comments-video">
+                        <div class="comments-video--area">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/APlElpps1WA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <p class="r-bold f-15 grey1 mt-1">Francine Silva</p>
+                        <p class="r-regular f-11 grey1">Proprietária da Saúde & Forma</p>
+                    </div>
+                </div>
+                <div class="comments-comments">
+                    <div class="comments-comment--item">
+                        <img src="media/img1.png" alt="">
+                        <p class="r-bold f-15 grey1 mt-1">Letícia Crescêncio</p>
+                        <p class="r-regular f-11 grey1">Esteticista</p>
+                        <p class="r-regular f-15 grey1 mt-2">Antes de iniciar as sessões de mentoria, me sentia desorganizada com as finanças.
+                            Logo que se iniciaram as sessões já comecei a me sentir mais segura e confiante, com uma melhor percepção e compreensão de onde e como estavam as minhas falhas e, consequentemente passei a corrigi-las.
+                            Hoje me sinto ainda mais segura e agradecida pela mentoria da Analice, que se mostrou uma excelente profissional e me auxiliou de forma magistral.</p>
+                    </div>
+                    <div class="comments-comment--item">
+                        <img src="media/img2.png" alt="">
+                        <p class="r-bold f-15 grey1 mt-1">Francini Ventura</p>
+                        <p class="r-regular f-11 grey1">Proprietária do Instituto Francini Ventura</p>
+                        <p class="r-regular f-15 grey1 mt-2">Quando eu iniciei as mentorias eu me sentia perdida, desorganizada e sem gestão do meu tempo. Ao decorrer das mentorias, o processo de planejamento do tempo e financeiro foi ficando mais
+                            claro e senti as mudanças tanto na vida profissional e pessoal. O aprendizado mais importante foi a gestão do tempo. Com a mentoria passei a me planejar e usar o tempo a meu favor. O diferencial da Analice é que ela
+                            entrega além do que é o combinado.
+                        </p>
+                    </div>
+                    <div class="comments-comment--item">
+                        <img src="media/img3.png" alt="">
+                        <p class="r-bold f-15 grey1 mt-1">Letícia Zaparolli Oliveira</p>
+                        <p class="r-regular f-11 grey1">Proprietária da LZ Laçarotes</p>
+                        <p class="r-regular f-15 grey1 mt-2">Antes das mentorias eu me sentia sem rumo, vivendo um dia de cada vez e sem um propósito. Com as mentorias eu vi que posso conquistar todos os meus objetivos, defini e estou ciente das
+                            minhas metas, estou mais motivada a planejar e conquistar elas, mas para que isso seja possível eu preciso de planejamento, foco e organização. Não dá para viver sem um planejamento! Aprendi que se eu não me planejar,
+                            ninguém vai planejar pra mim e assim, nunca vou conquistar nada. Também passei a colocar todos os gastos em planilhas e visualizar aonde que vai o dinheiro. Passei a controlar mais o meu lado consumista, porque senão eu só
+                            gasto com coisas fúteis e sem importância, agora invisto no que realmente vai me fazer chegar no meu objetivo final.</p>
+                    </div>
+                </div>
+                <p class="r-regular f-36 grey1 mt-3">Seja uma Estrela da Estética, são apenas <span class="red1">20 vagas!</span></p>
+                <p class="r-bold f-24 grey1">Comece hoje mesmo. Faça sua inscrição</p>
+                <div class="prices mt-4">
+                    <h3 class="r-bold f-24 grey1">De <strike>R$ 1.097,00</strike> por</h3>
+                    <h1 class="r-black f-40 red1">R$ 597,00 à vista</h1>
+                    <h3 class="r-medium f-24 grey1">ou 12x de R$ 58,16</h3>
+                    <button type="button" name="button" class="btn-red r-bold f-28 white" onclick="window.location.href='https://payment.hotmart.com/C59454760K?checkoutMode=10'">INSCREVA-SE AGORA</button>
+                    <p class="r-regular f-16 grey1">Pagamento 100% seguro.</p>
+                    <img src="assets/images/card-flags.svg" alt="Bandeira de cartões">
+                </div>
             </div>
         </section>
+        <section class="section-about">
+            <div class="container">
+                <h1 class="r-bold f-48 grey1">Conheça sua mentora</h1>
+                <div class="about-content">
+                    <div class="about-content--text">
+                        <p class="r-regular f-20 grey1 mt-2">Tem 25 anos de idade, sempre foi viciada em conhecimento e por isso ama e não para de estudar.
+                        </p>
+                        <p class="r-regular f-20 grey1 mt-2">Se formou na sua primeira graduação aos 19 anos, e desde então vem se especializando em diversas áreas. Conheceu a Educação Financeira em 2020, onde se apaixonou, e descobriu seu propósito
+                            de vida.
+                        </p>
+                        <p class="r-regular f-20 grey1 mt-2">Mentora de Negócios e Educadora Financeira, ensina você a Aumentar o Faturamento da sua Empresa e ter mais Tempo para Viver! Por meio de Mentorias onde você aprende a Administrar o seu
+                            Dinheiro de forma simples e descontraída.
+                        </p>
+                        <p class="r-regular f-20 grey1 mt-2">Como Empreendedora e Esteticista, sabe os principais desafios que são enfrentados, por isso, pega na mão de cada Mentorada e as acompanha. Transmite seus conhecimentos e vivências,
+                            ajudando-as a se tornarem mais prósperas e realizarem seus sonhos, por meio de organização, controle e planejamento financeiro.
+                        </p>
+                        <p class="r-regular f-20 grey1 mt-2">Tem como objetivo ensinar e mostrar para seus mentoradas sobre o brilho interior de cada uma, sua essência e sua capacidade. Incentivando-as a crescerem e brilharem ainda mais.
+                        </p>
+                        <p class="r-regular f-20 grey1 mt-2">Vem Brilhar Comigo?</p>
+
+                    </div>
+                    <div class="about-content--image">
+                        <img src="media/analice1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-investiment">
+            <div class="container">
+                <div class="title-star mt-5">
+                    <h1 class="r-bold f-48 grey1">Investimento</h1>
+                </div>
+                <h1 class="r-bol f-48 grey1 mt-4">De <del>R$ 1.097</del></h1>
+                <h1 class="r-bol f-48 grey1 mt-2">POR APENAS</h1>
+            </div>
+            <h1 class="r-bol f-48 white mt-2" id="h1Red">R$ 597,00</h1>
+            <div class="container">
+                <h1 class="r-bol f-48 grey1 mt-2">ou 12X R$ 58,16</h1>
+                <div class="prices mt-4">
+                    <button type="button" name="button" class="btn-red r-bold f-28 white" onclick="window.location.href='https://payment.hotmart.com/C59454760K?checkoutMode=10'">FAZER MINHA INSCRIÇÃO</button>
+                    <p class="r-regular f-16 grey1">Pagamento 100% seguro.</p>
+                    <img src="assets/images/card-flags.svg" alt="Bandeira de cartões">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <img src="assets/images/logo-red.svg" alt="">
+                <div class="social-networks mt-2">
+                    <a href="https://api.whatsapp.com/send?phone=554891066875&text=Olá!%20Gostaria%20de%20conhecer%20a%20sua%20mentoria%20de%20negócios." target="_blank">
+                        <img src="assets/images/whatsapp.svg" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/analiceramlow.amr" target="_blank">
+                        <img src="assets/images/facebook.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/analiceramlow/?hl=pt-br" target="_blank">
+                        <img src="assets/images/instagram.svg" alt="">
+                    </a>
+                </div>
+                <p class="r-regular f-14 grey1 mt-2">CNPJ: 24.619.183/0001-96</p>
+                <a href="privacy-policy.html" target="_blank" class="r-regular f-14 grey1 mt-2">Política de Privacidade</a>
+            </div>
+        </footer>
     </main>
 
 

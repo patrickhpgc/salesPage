@@ -1,0 +1,134 @@
+@media screen and (max-width: 768px) {
+    .what-learn--items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .benefits-list .item {
+        width: 100%;
+    }
+
+    .f-64 {
+        font-size: 45px;
+    }
+
+    .f-72 {
+        font-size: 35px;
+    }
+
+    h1 {
+        margin: 16px 0;
+    }
+
+    .header--title {
+        flex-wrap: wrap;
+    }
+
+    header .container {
+        padding: 16px;
+    }
+
+    .header--title-right h1:nth-child(2) {
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-content {
+        flex-wrap: wrap;
+    }
+
+    .details--items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .forwho--items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn-pink {
+        width: 100%;
+    }
+
+    .btn-red {
+        width: 100%;
+    }
+
+    .prices img {
+        width: 400px;
+    }
+
+    .comments-video {
+        width: 100%;
+    }
+    .comments-comments {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .section-zero .container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .details--items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+
+
+    .items-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .prices img {
+        width: 300px;
+    }
+
+    .header--items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header--title p {
+        margin-top: 16px;
+    }
+
+    .header--title h1 {
+        margin-top: 16px;
+    }
+
+    .f-64 {
+        font-size: 35px;
+    }
+
+    .f-72 {
+        font-size: 25px;
+    }
+
+    .f-48 {
+        font-size: 35px;
+    }
+
+    .f-24 {
+        font-size: 18px;
+    }
+
+    .f-20 {
+        font-size: 15px;
+    }
+
+    .title-star h1:after {
+        display: none;
+    }
+
+    .title-star h1 {
+        text-align: center;
+    }
+
+    .about-content--image img {
+        max-width: 300px;
+    }
+}
